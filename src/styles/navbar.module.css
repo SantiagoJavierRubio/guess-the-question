@@ -1,0 +1,29 @@
+.navbar {
+    @apply absolute top-0 left-0 w-full flex flex-row 
+    items-center justify-center bg-amber-600 px-2 py-4;
+}
+
+.logo {
+    @apply w-1/3
+}
+
+.navLinkContainer {
+    @apply w-1/3 flex justify-center items-center gap-4 m-auto;
+}
+
+.navLink {
+    @apply text-lg font-semibold hover:underline hover:font-bold underline-offset-8;
+}
+
+.authContainer {
+    @apply flex flex-row items-center justify-end gap-2 w-1/3;
+}
+
+.username {
+    @apply text-center text-xl text-black;
+}
+
+.authBtn {
+    @apply rounded-lg bg-slate-500 py-2 px-4 font-semibold 
+    text-black no-underline transition hover:bg-slate-400;
+}

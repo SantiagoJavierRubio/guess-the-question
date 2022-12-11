@@ -1,0 +1,17 @@
+.container {
+    @apply flex flex-col items-center justify-center gap-4;
+}
+
+.title {
+    @apply text-2xl text-amber-400 font-semibold;
+}
+
+.inputContainer {
+    @apply flex flex-row justify-center items-center relative;
+}
+.inputContainer > input {
+    @apply text-right min-w-full;
+}
+.inputContainer > p {
+    @apply text-white text-2xl font-bold absolute -right-5;
+}

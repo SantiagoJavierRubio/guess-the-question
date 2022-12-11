@@ -1,0 +1,15 @@
+.container {
+    @apply flex flex-col items-center justify-center gap-4;
+}
+
+.container > input {
+    @apply text-center;
+}
+
+.noQuestionsWarning {
+    @apply text-amber-400 text-3xl text-center font-bold;
+}
+
+.question {
+    @apply text-zinc-200 text-2xl text-center font-bold;
+}

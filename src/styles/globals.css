@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.textInput {
+    @apply relative rounded-md border-none text-xl p-2 bg-gray-100;
+}
+
+.actionButton {
+    @apply text-xl font-bold rounded-md py-4 px-6
+    drop-shadow-xl shadow-slate-900 enabled:hover:shadow-2xl
+    transition-all enabled:hover:-translate-y-px active:translate-y-0
+    disabled:bg-slate-500 disabled:cursor-not-allowed disabled:text-zinc-300;
+}
+
+.mainActionButton {
+    @apply text-amber-300 bg-rose-700 enabled:hover:bg-rose-500 enabled:active:bg-rose-900;
+}
+
+.secondaryActionButton {
+    @apply text-indigo-800 bg-teal-500 enabled:hover:bg-teal-300 enabled:active:bg-teal-800;
+}
+
+.loader {
+    @apply text-center font-bold text-2xl p-2 bg-amber-400 text-white w-12 h-12;
+    animation: loaderSpin 2.5s ease-in infinite;
+}
+.loader > p {
+    transform: rotate(45deg);
+}
+
+@keyframes loaderSpin {
+    0% {
+        transform: rotate(-45deg) scale(1.15);
+        opacity: 1;
+    }
+    15% {
+        transform: rotate(-60deg) scale(1.1);
+        opacity: .85;
+    }
+    85% {
+        transform: rotate(315deg) scale(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-10) scale(1)
+    }
+}
