@@ -22,6 +22,9 @@ export const answersRouter = router({
             where: {
                 questionId: input.id
             },
+            include: {
+                author: true
+            },
             take: (input.ammount || 3),
             skip: input.cursor ? 1 : 0,
             cursor: input.cursor ? { id: input.cursor } : undefined,

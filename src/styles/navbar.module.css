@@ -1,6 +1,7 @@
 .navbar {
     @apply absolute top-0 left-0 w-full flex flex-row 
-    items-center justify-center bg-amber-600 px-2 py-4;
+    items-center justify-center bg-amber-600 px-2 py-4
+    drop-shadow-xl shadow-inner shadow-amber-700;
 }
 
 .logo {
