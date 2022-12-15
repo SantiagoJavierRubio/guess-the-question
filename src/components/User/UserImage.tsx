@@ -1,8 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
+import { FaUserSecret } from "react-icons/fa"
 
-export const UserImage: React.FC<{url: string | null | undefined}> = ({url}) => {
+interface UserImageProps {
+  url: string | null | undefined;
+  width?: number;
+  height?: number;
+  username?: string;
+}
+
+export const UserImage: React.FC<UserImageProps> = ({url, width=50, height=50, username="user"}) => {
   return (
-    url ? <Image src={url} width={50} height={50} alt="user picture" /> : <div></div>
+    url ? <Image src={url} width={width} height={height} alt={`${username}'s avatar`} /> : <FaUserSecret size={32} />
   )
 }

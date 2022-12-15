@@ -17,11 +17,19 @@
 }
 
 .authContainer {
-    @apply flex flex-row items-center justify-end gap-2 w-1/3;
+    @apply flex flex-row items-center justify-end gap-4 w-1/3;
+}
+
+.userData {
+    @apply flex flex-row items-center justify-end gap-1;
+}
+
+.userData > img {
+    @apply rounded-full z-10 bg-slate-100 text-indigo-500;
 }
 
 .username {
-    @apply text-center text-xl text-black;
+    @apply text-center text-base text-black;
 }
 
 .authBtn {
