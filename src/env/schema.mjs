@@ -25,6 +25,8 @@ export const serverSchema = z.object({
   GOOGLE_CLIENT_SECRET: z.string(),
   FACEBOOK_CLIENT_ID: z.string(),
   FACEBOOK_CLIENT_SECRET: z.string(),
+  SS_API_URL: z.string(),
+  SS_TOKEN: z.string(),
 });
 
 /**
